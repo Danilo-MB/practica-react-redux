@@ -1,5 +1,5 @@
 import {ActionTypes} from '../constants';
-import produce from 'immer';
+//import produce from 'immer';
 
 const initalState = {
     name:'Joa',
@@ -8,10 +8,10 @@ const initalState = {
 };
 
 export const profileReducer = (state = initalState, {type, payload}) => {
-    console.log(type);
+    console.log(payload);
     switch(type){
         case ActionTypes.SET_PROFILE:
-            return {...state, payload};
+            return {...state, ...payload};
         default:
             return state;
     }
