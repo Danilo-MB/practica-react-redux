@@ -22,6 +22,7 @@ const EditProfile = () => {
     const profileInfo = {name: userName, lastName, imageUrl};
 
     const handleSubmit = () => {
+        console.log(profileInfo, "handleSubmit");
         dispatch(setProfile(profileInfo));
     };
 

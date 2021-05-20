@@ -8,10 +8,12 @@ const initalState = {
 };
 
 export const profileReducer = (state = initalState, {type, payload}) => {
-    console.log(payload);
+    console.log("type", type, payload);
     switch(type){
         case ActionTypes.SET_PROFILE:
-            return {...state, ...payload};
+            const newState = {...state, ...payload};
+            console.log("newState", newState);
+            return newState;
         default:
             return state;
     }

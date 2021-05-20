@@ -1,8 +1,8 @@
 import {ActionTypes} from '../redux/constants';
 
-export const setProfile = (profileInfo) => {
+export const setProfile = (profile) => {
     return {
         type: ActionTypes.SET_PROFILE,
-        payload: profileInfo
+        payload: profile
     }
 };
