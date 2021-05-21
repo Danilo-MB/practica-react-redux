@@ -6,10 +6,9 @@ const Header = () => {
     return (
         <>
         <Nav>
+            <HeaderLink to="/">Profile</HeaderLink>
             <HeaderLink to="/edit-profile">Edit Profile</HeaderLink>
-        </Nav>
-        <Nav>
-            <HeaderLink to="/users-list">Users List</HeaderLink>
+            <HeaderLink to="/users-list">User History</HeaderLink>
         </Nav>
         </>
     );

@@ -6,3 +6,11 @@ export const setProfile = (profile) => {
         payload: profile
     }
 };
+
+export const saveUser = (profile) => {
+    return {
+        type: ActionTypes.UPDATE_USER,
+        payload: profile
+    }
+
+};

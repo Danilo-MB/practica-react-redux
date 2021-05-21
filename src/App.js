@@ -2,7 +2,7 @@ import './App.css';
 import EditProfile from './components/EditProfile';
 import Header from './components/Header';
 import Profile from './components/Profile';
-import UsersList from './components/UsersList';
+import UserHistory from './components/UserHistory';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Switch>
       <Route path="/edit-profile" component={EditProfile} />
       <Route path="/" exact component={Profile} />
-      <Route path="/users-list" component={UsersList} />
+      <Route path="/users-list" component={UserHistory} />
       </Switch>
       </Router>
     </div>
